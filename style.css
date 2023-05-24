@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+:root {
+    --primary-clr: rgb(242, 227, 227);
+    --brand-clr: rgb(162, 221, 44);
+    --secondary-clr: rgb(255, 0, 123);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem 2rem;
+    background-color: var(--primary-clr);
+}
+
+.logo-text {
+    font-family:"Bubblegum Sans";
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+#zed {
+    color: var(--brand-clr);
+}
+
+nav {
+    width: 20rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: var(--brand-clr);
+}
+
+.main-img {
+    background-image: url("main.jpg");
+    background-position:center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.circle {
+    width: 150px;
+    height:150px;
+    border-radius: 100%;
+}
+
+.circle1{
+    background-color: var(--secondary-clr);
+    position: absolute;
+    right: 15%;
+    top: 54%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle1 h2 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.circle2{
+    background-color: var(--brand-clr);
+    position: absolute;
+    right: 16%;
+    top: 55%;
+    z-index: 0;
+}
+
+.second-section{
+    background: center/cover url("second.jpg") no-repeat;
+    width: 100%;
+    height: 260px;
+    padding: 3rem 0 0 5rem;
+}
+
+.second-section h3 {
+    color: rgb(82, 74, 74);
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.second-section h2 {
+    color: var(--secondary-clr);
+    margin-bottom: 16px;
+}
+
+.second-section p {
+    color: rgb(82, 74, 74);
+}
+
+.second-section a{
+    color: rgb(82, 74, 74);
+}
+
+footer >div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--brand-clr);
+}
+
+footer >div >div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+footer i {
+    margin: 17px 0;
+}
+
+@media (max-width: 700px){
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        margin-top: auto;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        margin: 0 4px;
+    }
+
+    .logo-text{
+        font-size: 20px;
+        margin-left: -20px;
+        margin-right: 10px;
+    }
+
+    .main-img {
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle h2 {
+        font-size: 16px;
+    }
+
+    .second-section {
+        padding: 20px 60px;
+        margin: 0 auto;
+    }
+
+    .second-section h3{
+        font-size: 14px;
+    }
+
+    .second-section h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    i{
+        font-size: 18px !important;
+    }
+}
